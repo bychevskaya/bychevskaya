@@ -1,0 +1,86 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+
+/* Добавим немного стиля */
+body {
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+    font-variation-settings: "wdth" 100 !important;
+    background-color: #edede9 !important;
+}
+
+li {
+    list-style: none;
+}
+
+
+aside{
+    padding: 5px;
+}
+
+    aside:hover {
+        background-color: #eef4ed;
+        border-radius: 5px;
+        transition: background-color 0.5s;
+    }
+
+header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #bc4749;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #e0e6c5;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* ------------------------------------ */
+/* стили для страницы с блогом */
+
+article {
+    display: flex;
+    gap: 5px;
+    /* перенос элементов */
+    flex-wrap: wrap;
+}
+
+article {
+    background-color: #d5c7bc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 350px;
+}
+
+
+@media (max-width: 500px) {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+}
